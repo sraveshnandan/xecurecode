@@ -9,5 +9,5 @@ body {
 }
 
 .under {
-  @apply bg-secondry/90 p-12 blur-md animate-bounce absolute;
+  @apply bg-secondry/90 p-12 blur-md animate-waving-hand absolute;
 }

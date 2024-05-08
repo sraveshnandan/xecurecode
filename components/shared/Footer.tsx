@@ -10,7 +10,7 @@ const Footer = (props: Props) => {
   return (
     <div className="w-full mt-4 px-2  ">
       {/* Get started for free card  */}
-      <div className="w-full  py-8  px-4 rounded-xl shadow-2xl shadow-black/20 bg-glass/10   flex  md:flex-row flex-col gap-4 items-center">
+      <div className="w-full  py-8  px-4 rounded-xl shadow-2xl shadow-black/20 bg-glass   flex  md:flex-row flex-col gap-4 items-center">
         {/* Text section  */}
         <div className="md:w-1/2 w-full">
           <span className="flex md:text-4xl text-xl  font-semibold  flex-row  items-center gap-2">
@@ -22,10 +22,10 @@ const Footer = (props: Props) => {
           </span>
         </div>
         {/* CTA section  */}
-        <div className="items-center pr-4  hover:shadow-2xl justify-end flex  flex-grow">
+        <div className="items-center pr-4   justify-end flex  flex-grow">
           <Link
             href={`/Cariers`}
-            className="bg-secondry px-5 py-2  rounded-full"
+            className="bg-secondry px-5 py-2 hover:shadow-2xl hover:shadow-secondry  rounded-full"
           >
             Apply now
           </Link>
