@@ -20,6 +20,8 @@ const config: Config = {
         mf: "990px",
         ml: "1024px",
       },
+
+      
     },
   },
   plugins: [],

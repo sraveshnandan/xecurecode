@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`max-w-[1440px] flex  items-center justify-center h-screen w-screen mx-auto bg-primary text-white`}
+        className={`max-w-[1440px] flex  items-center justify-center h-screen w-screen mx-auto bg-glass/10 text-white`}
       >
         {children}
       </body>

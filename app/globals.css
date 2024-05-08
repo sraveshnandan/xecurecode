@@ -4,4 +4,10 @@
 
 body {
   max-width: 1440px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.under {
+  @apply bg-secondry/90 p-12 blur-md animate-bounce absolute;
 }

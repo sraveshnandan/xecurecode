@@ -6,7 +6,8 @@ type Props = {};
 const HeroSection = (props: Props) => {
   return (
     <div className="w-full  text-white flex items-center justify-center h-screen">
-      <div className=" flex flex-col items-center justify-center gap-4">
+      <div className="under"></div>
+      <div className=" z-50 flex flex-col items-center justify-center gap-4">
         <span className="font-medium text-7xl">Future of Softwares</span>
         <span className="font-medium text-7xl">with XecureCode</span>
         <span className="text-lg text-gray-400">

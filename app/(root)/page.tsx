@@ -6,6 +6,7 @@ const HomePage = () => {
     <div className="w-full  h-screen text-white">
       {/* Hero Section  */}
       <HeroSection />
+      
     </div>
   );
 };

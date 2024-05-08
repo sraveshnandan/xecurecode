@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Footer, NavBar } from "@/components";
-import { ClerkProvider } from "@clerk/nextjs";
+
 export const metadata: Metadata = {
   title: "XecueCode",
   description: "Next Gen Software Development",
