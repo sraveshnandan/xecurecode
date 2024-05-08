@@ -1,7 +1,11 @@
+import { HeroSection } from "@/components";
+import { SignOutButton, UserButton } from "@clerk/nextjs";
+
 const HomePage = () => {
   return (
-    <div className="w-full text-white">
-      <h1>Next js app</h1>
+    <div className="w-full  h-screen text-white">
+      {/* Hero Section  */}
+      <HeroSection />
     </div>
   );
 };

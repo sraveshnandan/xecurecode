@@ -36,12 +36,12 @@ const NavBar = (props: Props) => {
       </div>
       {/* mobile menu  */}
       {showMenu && (
-        <div className="flex-grow overflow-y-scroll flex-col  items-center backdrop-blur-sm  bg-glass pt-14  top-0 right-0 w-3/4 h-screen  transition-all duration-300 absolute flex">
+        <div className="flex-grow overflow-y-scroll flex-col  items-center backdrop-blur-md  bg-glass pt-14  top-0 right-0 w-[90%] min-h-screen  transition-all duration-300 z-50 absolute flex">
           <button
-            className="absolute left-4 top-4  font-semibold text-red-600 shadow-2xl"
+            className="absolute left-4 top-4  font-bold text-white text-xl shadow-2xl"
             onClick={() => setshowMenu((prev) => !prev)}
           >
-            <X />
+            <X size={40} />
           </button>
           {topMenuItems &&
             topMenuItems.map((item, index) => (
@@ -49,7 +49,7 @@ const NavBar = (props: Props) => {
                 onClick={() => {
                   setTimeout(() => {
                     setshowMenu((prev) => !prev);
-                  }, 1000);
+                  }, 1500);
                 }}
                 className="my-2  w-3/4"
                 key={index}
@@ -62,13 +62,13 @@ const NavBar = (props: Props) => {
 
           <Link
             className="hover:bg-glass border-[1] duration-500 transition-all shadow-2xl hover:shadow-secondry border-white py-2 px-5 rounded-full"
-            href={"/login"}
+            href={"/auth/sign-in"}
           >
             login
           </Link>
           <Link
             className="bg-secondry border-[1]  flex  duration-500 transition-all shadow-2xl hover:shadow-secondry border-white py-2 px-5  rounded-full"
-            href={"/register"}
+            href={"/auth/sign-up"}
           >
             Get Started
           </Link>
@@ -79,13 +79,13 @@ const NavBar = (props: Props) => {
       <div className="flex flex-row items-center w-fit  flex-grow justify-end pr-4  gap-4  ">
         <Link
           className="hover:bg-glass border-[1] duration-500 transition-all shadow-2xl hover:shadow-secondry hidden sm:flex  text-sm border-white py-2 px-5 rounded-full"
-          href={"/login"}
+          href={"/auth/sign-in"}
         >
           login
         </Link>
         <Link
           className="bg-glass border-[1]  md:flex hidden duration-500 transition-all shadow-2xl hover:shadow-secondry border-white py-2 px-5 text-sm  rounded-full"
-          href={"/register"}
+          href={"/auth/sign-up"}
         >
           Carear
         </Link>

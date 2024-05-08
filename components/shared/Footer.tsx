@@ -1,23 +1,14 @@
 import { footerMenu01, footerMenu02, footerMenu03 } from "@/constants";
-import {
-  InstagramIcon,
-  Linkedin,
-  LinkedinIcon,
-  Mic,
-  MicVocal,
-  MicVocalIcon,
-  Speaker,
-  TwitterIcon,
-} from "lucide-react";
-import Image from "next/image";
+import { InstagramIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import EmailSubscribeForm from "./EmailSubscribeForm";
 
 type Props = {};
 
 const Footer = (props: Props) => {
+  const subscribed = () => {};
   return (
-    <div className="p-4 w-full">
+    <div className="w-full mt-4 px-2  ">
       {/* Get started for free card  */}
       <div className="w-full  py-8  px-4 rounded-xl shadow-2xl shadow-black/20 bg-glass/10   flex  md:flex-row flex-col gap-4 items-center">
         {/* Text section  */}
@@ -111,32 +102,19 @@ const Footer = (props: Props) => {
           </div>
         </div>
         {/* right container  */}
-        <div className="md:w-2/5 relative  w-full rounded-lg">
+        <div className="md:w-2/5 w-full relative md:h-[437px]  h-[450px]  mf:h-[435px]">
           {/* Newsletter section  */}
-          <div className="bg-glass/10 px-4  py-4 md:p-2  w-full text-center  rounded-md">
-            <span className="mf:text-xl w-full font-semibold">
+          <div className=" bg-glass/10 rounded-lg px-2 sm:py-4 py-4  mf:p-4">
+            <span className="mf:text-xl text-lg line-clamp-1 mb-4 md:mb-2  w-full font-semibold">
               Join our newsletter
             </span>
             {/* input container  */}
-            <form className="w-full  gap-4 flex mf:my-4 lg:py-4 mf:flex-row flex-col items-center">
-              <input
-                type="email"
-                placeholder="enter your email"
-                className="bg-glass p-2 flex-grow rounded-lg"
-                required
-              />
-              <button
-                className="bg-secondry  px-5 py-2 rounded-full"
-                type="submit"
-              >
-                subscribe
-              </button>
-            </form>
+            <EmailSubscribeForm />
           </div>
 
           {/* social links section  */}
 
-          <div className="flex relative mf:-bottom-8 flex-row gap-2 w-full items-end my-8">
+          <div className="flex absolute bottom-0  flex-row justify-around gap-2 w-full items-end ">
             {/* Linkedin  */}
             <Link
               href={""}
