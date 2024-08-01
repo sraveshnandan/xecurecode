@@ -8,11 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#444cf7",
+        secondry: "#222222",
+        glass: "rgba(255,255,255,0.25)",
+        red: "#ff5229",
+        lightBg: "#c8c8c8"
       },
+      backgroundImage:{
+        pattern:"url('/images/hero_bg.png')"
+      }
     },
   },
   plugins: [],
