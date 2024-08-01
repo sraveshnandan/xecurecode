@@ -15,9 +15,30 @@ const config: Config = {
         red: "#ff5229",
         lightBg: "#c8c8c8"
       },
-      backgroundImage:{
-        pattern:"url('/images/hero_bg.png')"
+      backgroundImage: {
+        pattern: "url('/images/hero_bg.png')"
+      },
+
+      animation: {
+
+        "slide-left": "slide-left 1s ease "
+
+
+      },
+      keyframes: {
+        'slide-left': {
+          '0%': {
+            height: '0%',
+          },
+          '100%': {
+
+            height: '80%',
+          }
+        }
       }
+
+
+
     },
   },
   plugins: [],
