@@ -2,7 +2,16 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <div>Loader</div>
+    <>
+      <div className="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </>
   )
 }
 

@@ -1,4 +1,8 @@
 import { AboutUsSection, HeroSection, Loader } from "@/components";
+import ServicesSection from "@/components/home/ServicesSection";
+import Teamsection from "@/components/home/Teamsection";
+import TechnologySection from "@/components/home/TechnologySection";
+import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
 import { Suspense } from "react";
 
 
@@ -8,6 +12,10 @@ const Home = () => {
     <Suspense fallback={<Loader />}>
       <HeroSection />
       <AboutUsSection />
+      <ServicesSection />
+      <Teamsection />
+      <TechnologySection />
+      <WhyChooseUsSection />
     </Suspense>
   );
 }

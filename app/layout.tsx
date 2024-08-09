@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-import { Footer, Header } from "@/components";
+import { Footer, Header, Loader } from "@/components";
+import { Suspense } from "react";
 
 
 const inter = Poppins({ subsets: ["latin"], weight: ["400", "600", "800"] });
@@ -19,12 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden  max-w-[1440px]  mx-auto min-h-screen`}>
-        <Header />
-        {children}
-        <Footer />
-        <Toaster position="top-center" richColors={true} />
-      </body>
+      <Suspense fallback={<Loader />}>
+        <body className={`${inter.className} overflow-x-hidden  max-w-[1440px]  mx-auto min-h-screen`}>
+          <Header />
+          {children}
+          <Footer />
+          <Toaster position="top-center" richColors={true} />
+        </body>
+      </Suspense>
 
 
     </html>

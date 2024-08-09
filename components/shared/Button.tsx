@@ -1,18 +1,16 @@
-import React, { Attributes, DOMAttributes, ReactNode } from 'react'
+import React, { Attributes, ButtonHTMLAttributes, DOMAttributes, FC, ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-type Props = {
+type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
     children: ReactNode,
     className?: string,
-    rest?: DOMAttributes<HTMLButtonElement>
-
-
+    loading?: boolean
 }
 
-const Button = ({ children, className, ...rest }: Props) => {
+const Button: FC<Props> = ({ children, loading, className, ...rest }: Props) => {
 
     return (
-        <button {...rest} className={`${twMerge("text-md text-white font-semibold px-5 py-3 bg-primary rounded-md", className)}`}>{children}</button>
+        <button {...rest} className={`${twMerge("text-md text-white font-semibold px-5 py-3 bg-primary rounded-md", className)}`}>{loading ? "please wait..." : children}</button>
     )
 }
 
