@@ -33,9 +33,24 @@ const NavMenu: InavMenu[] = [
 
 const footerMenu: InavMenu[] = [
     {
-        name: ""
+        name: "Privacy Policy",
+        link: "/"
+    },
+    {
+        name: "Terms & Conditions",
+        link: "/"
+    },
+    {
+        name: "Help Center",
+        link: "/"
+    },
+    {
+        name: "Contact Us",
+        link: "/"
     }
 ]
+
+
 
 const services: { name: string, description: string, tech_stack: string[], icon: string }[] = [
     {
@@ -164,9 +179,29 @@ const technologies = [
     }
 ]
 
+const teams = [
+    {
+        name: "Sravesh Nandan",
+        avatar: "https://res.cloudinary.com/dirdehr7r/image/upload/v1724399190/my_photo_komcxc.png",
+        role: "Full Stack Developer",
+        twitter: "https://x.com/sravesh__nandan",
+        mail: "sraveshnandan@gmail.com",
+        linkdin: "https://www.linkedin.com/in/sravesh-nandan/"
+    },
+    {
+        name: "Sravesh Nandan",
+        avatar: "https://res.cloudinary.com/dirdehr7r/image/upload/v1724399190/my_photo_komcxc.png",
+        role: "Full Stack Developer",
+        twitter: "https://x.com/sravesh__nandan",
+        mail: "sraveshnandan@gmail.com",
+        linkdin: "https://www.linkedin.com/in/sravesh-nandan/"
+    },
+    
+]
 
 
 
 
 
-export { NavMenu, services, companyContactDetails, whyCards, technologies }
+
+export { NavMenu, services, companyContactDetails, whyCards, technologies, footerMenu, teams }

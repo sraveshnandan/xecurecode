@@ -1,4 +1,4 @@
-import { companyContactDetails, services } from '@/constants'
+import { companyContactDetails, footerMenu, services } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -54,7 +54,7 @@ const Footer = () => {
           <span className='text-2xl font-semibold my-4 '>Importents links</span>
 
           {
-            services.map((item, index) => (
+            footerMenu.map((item, index) => (
               <Link className='text-sm transition-all duration-300 hover:scale-95 hover:text-primary my-1' key={index} href={"#services"}>{item.name}</Link>
             ))
           }

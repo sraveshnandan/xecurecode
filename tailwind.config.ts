@@ -19,23 +19,7 @@ const config: Config = {
         pattern: "url('/images/hero_bg.png')"
       },
 
-      animation: {
 
-        "slide-left": "slide-left 1s ease "
-
-
-      },
-      keyframes: {
-        'slide-left': {
-          '0%': {
-            height: '0%',
-          },
-          '100%': {
-
-            height: '80%',
-          }
-        }
-      }
 
 
 

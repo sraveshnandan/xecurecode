@@ -9,7 +9,7 @@ import { Suspense } from "react";
 
 const Home = () => {
   return (
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<span>Loading...</span>}>
       <HeroSection />
       <AboutUsSection />
       <ServicesSection />

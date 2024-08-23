@@ -6,16 +6,11 @@ const WhyChooseUsSection = () => {
         <div className='flex items-center flex-col my-8'>
             <span className='text-primary self-center text-2xl font-semibold border-b-2 pb-2 border-b-primary/40'>Why choose us</span>
             <section className=' z-0 min-h-[calc(100vh-50vh)] p-4 xl:p-0  w-full  mx-auto items-center   flex lg:flex-row flex-col '>
-
-
-
-                {/* text section  */}
-
                 <div className='w-full flex py-12 flex-grow flex-col items-center md:items-start  lg:w-1/2 mb-8'>
                     <span className='text-4xl'>Why</span>
                     <span className='text-primary font-semibold my-2 text-4xl'>XecureCode ?</span>
 
-                    <span className='my-2 font-semibold opacity-55 lg:max-w-[80%]'>"A software solution provider, serving you all the tech needs just in time."</span>
+                    <span className='my-2 font-semibold opacity-55 lg:max-w-[80%]'>&quot;A software solution provider, serving you all the tech needs just in time.&quot;</span>
 
                     <span className='text-sm font-semibold lg:max-w-[80%]'>As a trusted software development company, our technology partnership is built on trust, benefits, and accountability. Experience seamless, creative, and hassle-free innovation with us.</span>
                 </div>
