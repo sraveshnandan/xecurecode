@@ -1,4 +1,4 @@
-import React, { Attributes, ButtonHTMLAttributes, DOMAttributes, FC, ReactNode } from 'react'
+import { ButtonHTMLAttributes, FC, ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {

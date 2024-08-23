@@ -73,7 +73,7 @@ const Footer = () => {
           <div className='flex mt-8 flex-row items-center gap-3'>
             {
               companyContactDetails.socialLinks.map((item, index) => (
-                <Link className='transition-all duration-500 hover:text-primary hover:scale-105' href={item.link}><item.icon /></Link>
+                <Link key={index} className='transition-all duration-500 hover:text-primary hover:scale-105' href={item.link}><item.icon /></Link>
               ))
             }
           </div>
