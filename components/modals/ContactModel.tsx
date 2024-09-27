@@ -24,7 +24,9 @@ const ContactModel = ({ isOpen, setIsOpen }: Props) => {
     const handleFormSubmit = async (ev: FormEvent) => {
         ev.preventDefault()
         try {
+            setIsOpen(false)
             return toast.success("Your query is submitted successfully.")
+
 
         } catch (error) {
 
@@ -36,7 +38,7 @@ const ContactModel = ({ isOpen, setIsOpen }: Props) => {
     return isOpen && (
         <div className='bg-transparent flex items-center justify-center backdrop-blur-sm  fixed z-50 top-0 overflow-hidden w-full h-screen '>
 
-            <div className='bg-white lg:w-[50%] rounded-md overflow-hidden w-[90%] p-2 flex flex-col md:flex-row shadow-md shadow-black/40'>
+            <div className='bg-white lg:w-[70%] rounded-md overflow-hidden w-[90%] p-2 flex flex-col md:flex-row shadow-md shadow-black/40'>
                 {/* logo section  */}
                 <div className='w-1/2 hidden bg-black p-12 rounded-l-lg md:flex flex-col text-white items-center justify-center'>
                     <Image src={"/images/logo_white.svg"} width={150} height={150} alt='logo' />
@@ -54,7 +56,7 @@ const ContactModel = ({ isOpen, setIsOpen }: Props) => {
                     <div className='mt-2'>
                         <input value={formData.name} required className='p-2 mb-2 w-full  font-medium border-b-2 pb-3' type="text" placeholder='enter your name' onChange={(ev) => setformData(prev => ({ ...prev, name: ev.target.value }))} />
 
-                        <input value={formData.email} required className='p-2 mb-2  w-full font-medium border-b-2 pb-3' type="text" placeholder='enter your email' onChange={(ev) => setformData(prev => ({ ...prev, email: ev.target.value }))} />
+                        <input value={formData.email} required className='p-2 mb-2  w-full font-medium border-b-2 pb-3' type="email" placeholder='enter your email' onChange={(ev) => setformData(prev => ({ ...prev, email: ev.target.value }))} />
 
                         <input value={formData.mobile} required className='p-2 mb-2 w-full font-medium border-b-2 pb-3' type="text" placeholder='e.g: +91 9126126126' onChange={(ev) => setformData(prev => ({ ...prev, mobile: ev.target.value }))} />
 

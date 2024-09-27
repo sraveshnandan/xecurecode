@@ -188,14 +188,7 @@ const teams = [
         mail: "sraveshnandan@gmail.com",
         linkdin: "https://www.linkedin.com/in/sravesh-nandan/"
     },
-    {
-        name: "Sravesh Nandan",
-        avatar: "https://res.cloudinary.com/dirdehr7r/image/upload/v1724399190/my_photo_komcxc.png",
-        role: "Full Stack Developer",
-        twitter: "https://x.com/sravesh__nandan",
-        mail: "sraveshnandan@gmail.com",
-        linkdin: "https://www.linkedin.com/in/sravesh-nandan/"
-    },
+    
     
 ]
 
